@@ -69,7 +69,8 @@ public class PageBase {
       capabilities.setCapability(mobileCapabilityGpsEnabled, "true");
 
       driver = new AndroidDriver(new URL("http://127.0.0.1:4723/wd/hub"), capabilities);
-      driver.setLocation(new Location(40.6874, -74.1878, 5));
+      //Set location to montreal 
+      driver.setLocation(new Location(45.5017 ,-73.5673, 5));
 
       // ExtentReport Initialization
       String reportsDirPath = "src/main/resources/reports/";
