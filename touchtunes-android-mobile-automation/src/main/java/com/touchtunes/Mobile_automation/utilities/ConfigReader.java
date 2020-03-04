@@ -5,7 +5,6 @@ import java.io.IOException;
 import java.util.Properties;
 
 public class ConfigReader {
-  private static String startAndroidEmulator;
   private static String androidEmulatorName;
   private static String androidAppLocation;
 
@@ -28,13 +27,8 @@ public class ConfigReader {
       return;
     }
 
-    startAndroidEmulator = p.getProperty("START_ANDROID_EMULATOR");
     androidEmulatorName = p.getProperty("ANDROID_EMULATOR_NAME");
     androidAppLocation = p.getProperty("ANDROID_APP_LOCATION");
-  }
-
-  public static String getStartAndroidEmulator() {
-    return startAndroidEmulator;
   }
 
   public static String getAndroidEmulatorName() {
