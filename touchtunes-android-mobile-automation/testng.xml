@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="touchtunes-takehometest">
+
+<listeners>
+	<listener class-name="com.touchtunes.Mobile_automation.listeners.MyListener"> </listener>
+</listeners>
+  <test name="JukeBoxPageTests">
+    <classes>
+      <class name="com.touchtunes.Mobile_automation.jukeboxPageTests.JukeBoxPageTests"/>
+    </classes>
+  </test> <!-- JukeBox Page Test -->
+</suite> <!-- Suite -->
