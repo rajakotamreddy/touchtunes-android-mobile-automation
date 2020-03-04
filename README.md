@@ -32,5 +32,6 @@ npm install -g appium-doctor
 
 
 Note to run project:
-Please upload app in: /src/main/resources/data/
-This project is capable of opening emmulator and appium server from test page.
+
+- Please upload app in: /src/main/resources/data/
+- This project is capable of opening emmulator and appium server from test page.
