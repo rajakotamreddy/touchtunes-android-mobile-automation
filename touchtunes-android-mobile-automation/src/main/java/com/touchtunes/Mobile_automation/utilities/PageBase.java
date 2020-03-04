@@ -56,11 +56,6 @@ public class PageBase {
 
         capabilities.setCapability(MobileCapabilityType.DEVICE_NAME, ConfigReader.getAndroidEmulatorName());
         capabilities.setCapability(MobileCapabilityType.APP, appDir.getAbsolutePath());
-
-        if (ConfigReader.getAndroidEmulatorName().contains("Emulator")) {
-          startEmulator();
-          Thread.sleep(6000);
-        }
       }
 
       capabilities.setCapability(MobileCapabilityType.PLATFORM_NAME, "Android");
@@ -100,11 +95,6 @@ public class PageBase {
 
   public static void killServer() throws IOException {
     Runtime.getRuntime().exec(killServer);
-  }
-
-  // For this method to work, the Emulator must be called "AndroidEmulator"
-  public static void startEmulator() throws IOException {
-    Runtime.getRuntime().exec(System.getProperty("user.dir") + ConfigReader.getStartAndroidEmulator());
   }
 
   public static void captureScreenShot(ITestResult testResult, AndroidDriver driver) throws IOException {
