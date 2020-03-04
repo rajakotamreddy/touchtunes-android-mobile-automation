@@ -38,5 +38,8 @@ npm install -g appium-doctor
 
 Note to run project:
 
-- Please upload app in: /src/main/resources/data/
+- Please upload app in: /src/main/resources/data/ (if app name is changed update new name in config.properties file)
 - This project is capable of opening emmulator and appium server from test page.
+- location is setted using "driver.setlocation()" method. location setted to montreal (45.5017 ,-73.5673).
+- Valdiation is limted to 4 items in the list (this can be done dynamically with test data using Horizontal and vertical swipe).
+- Reports(with screen shots) and logs added in the project, can be found under reports package
